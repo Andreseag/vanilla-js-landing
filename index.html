@@ -10,7 +10,8 @@
 
 <body>
   <div id="app">
-    <header class="header bg-black text-white">
+    <!-- Header -->
+    <header class="header text-white">
       <div class="header__container">
         <div class="header__logo fs-5">
           <p class="logo">LOGOTIPO</p>
@@ -22,10 +23,58 @@
           <h3>
             Si temes que tu Web se caiga o no cargue bien durante el Cyber, nosotros te podemos ayudar.
           </h3>
-          <button type="button" class="btn btn-primary btn-lg">Contáctanos</button>
+          <button type="button" class="custom-btn-primary btn btn-primary btn-lg">Contáctanos</button>
         </div>
       </div>
     </header>
+    <!-- End Header -->
+    <!-- Services -->
+    <section class="services container mt-5">
+      <div class="services__container">
+        <div class="services__title">
+          <h2 class="text-primary text-center px-5">
+            Podemos preparar tu sitio para el aumento de flujo CyberDay que recibirá en esos días.
+          </h2>
+        </div>
+        <div class="services__content d-flex justify-content-center">
+          <!-- Services Card -->
+          <div class="services__card">
+            <img src="./public/images/levels-simulation.png" alt="Simulacion de niveles" class="img-fluid" />
+            <h3 class="text-primary">Vamos a simular distintos niveles de visitas a tu sitio Web</h3>
+            <div class="service__card__description d-flex">
+              <svg width="28" height="14" viewBox="0 0 28 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0.5 5.87451L0.5 7.87451L26.3 7.87451L26.3 5.87451L0.5 5.87451Z" fill="#2441E6" />
+                <path
+                  d="M28 6.87449C28 7.67449 27.6 8.37449 26.9 8.87449L20.5 13.4745C20.1 13.7745 19.4 13.6745 19.1 13.2745C18.8 12.8745 18.9 12.1745 19.3 11.8745L25.7 7.27449C25.9 7.17449 26 6.97449 26 6.87449C26 6.77449 25.9 6.67449 25.7 6.47449L19.3 1.77449C18.9 1.47449 18.8 0.774492 19.1 0.374493C19.4 -0.025507 20.1 -0.125508 20.5 0.174492L26.9 4.87449C27.6 5.37449 28 6.17449 28 6.87449Z"
+                  fill="#2441E6" />
+              </svg>
+              <h5 class="text-black">
+                para conocer cuáles son sus niveles óptimos de rendimiento sin que tu sitio presente problemas de carga.
+              </h5>
+            </div>
+          </div>
+          <!-- End Services card -->
+          <!-- Services Card -->
+          <div class="services__card">
+            <img src="./public/images/recomendations.png" alt="Simulacion de niveles" class="img-fluid" />
+            <h3 class="text-primary">Luego haremos una informe con las recomendaciones</h3>
+            <div class="service__card__description d-flex">
+              <svg width="28" height="14" viewBox="0 0 28 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0.5 5.87451L0.5 7.87451L26.3 7.87451L26.3 5.87451L0.5 5.87451Z" fill="#2441E6" />
+                <path
+                  d="M28 6.87449C28 7.67449 27.6 8.37449 26.9 8.87449L20.5 13.4745C20.1 13.7745 19.4 13.6745 19.1 13.2745C18.8 12.8745 18.9 12.1745 19.3 11.8745L25.7 7.27449C25.9 7.17449 26 6.97449 26 6.87449C26 6.77449 25.9 6.67449 25.7 6.47449L19.3 1.77449C18.9 1.47449 18.8 0.774492 19.1 0.374493C19.4 -0.025507 20.1 -0.125508 20.5 0.174492L26.9 4.87449C27.6 5.37449 28 6.17449 28 6.87449Z"
+                  fill="#2441E6" />
+              </svg>
+              <h5 class="text-black">
+                que te realizamos ajustar, y si necesitas ayuda con la implementación, también te podemos ayudar.
+              </h5>
+            </div>
+          </div>
+          <!-- End Services card -->
+        </div>
+      </div>
+    </section>
+    <!-- End Services -->
   </div>
   <script type="module" src="/src/main.js"></script>
 </body>

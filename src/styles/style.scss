@@ -18,6 +18,7 @@
   // create color variables using CSS custom properties
   --primary-color: #2441e6;
   --secondary-color: #f7df1e;
+  --black-color: #00174f;
 }
 
 body {
@@ -29,14 +30,37 @@ h1 {
   font-weight: lighter;
 }
 
+h2 {
+  font-size: 2.375rem;
+  font-weight: bold;
+}
+
 h3 {
   font-size: 2rem;
   font-weight: bold;
 }
 
+h5 {
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+// Helpers text classes
+.text-primary {
+  color: var(--primary-color);
+}
+
+.text-black {
+  color: var(--black-color);
+}
+
+// Header component
 .header {
   height: 728px;
   padding: 56px 0px 144px 128px;
+  background-image: url("../../public/images/hero-background.png");
+  background-size: cover;
+  background-position: center;
 
   .header__container {
     height: 100%;
@@ -59,16 +83,49 @@ h3 {
   }
 }
 
+// Services component
+.services {
+  .services__container {
+    .services__content {
+      margin-top: 30px;
+      gap: 74px;
+      .services__card {
+        width: 30%;
+
+        &:nth-child(2) {
+          margin-top: 50px;
+        }
+
+        h3 {
+          margin-bottom: 25px;
+        }
+
+        .service__card__description {
+          margin-bottom: 10px;
+          gap: 14px;
+
+          svg {
+            flex-shrink: 0;
+            margin-top: 18px;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Logo component
 .logo {
   font-size: 2rem;
   font-weight: normal;
 }
 
-.btn {
+.custom-btn-primary {
   height: 50px;
   padding: 10px 24px;
   font-size: 17px;
   font-weight: bold;
   background-color: var(--primary-color);
   border-radius: 5px;
+  border-color: var(--primary-color);
 }
