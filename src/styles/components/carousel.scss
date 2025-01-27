@@ -1,0 +1,40 @@
+.characters {
+  margin: 120px 26px;
+  .characters__carousel {
+    // add opacity gradient to the carousel
+    margin: 16px 0px;
+    .card-character {
+      cursor: pointer;
+      background-color: $white;
+      border-radius: 10px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      margin: 0 10px;
+      transition: all 0.3s;
+      &:hover {
+        transform: translateY(-10px);
+      }
+      img {
+        width: 100%;
+        border-radius: 10px;
+      }
+      h3 {
+        font-size: 1.5rem;
+        font-weight: 700;
+        margin: 10px 0;
+      }
+      p {
+        font-size: 1rem;
+        font-weight: 400;
+        color: #6c757d;
+        margin-bottom: 6px;
+      }
+
+      .span-data {
+        font-size: 1.2rem;
+        font-weight: bold;
+        color: var(--primary-color);
+      }
+    }
+  }
+}

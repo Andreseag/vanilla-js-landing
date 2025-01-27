@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Landing Page LFI</title>
   <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 
 <body>
@@ -175,6 +176,17 @@
       <!-- End about us -->
     </section>
 
+    <section class="characters" id="characters" class="container-fluid">
+      <h2 class="text-primary">Personajes de Star Wars</h2>
+      <div class="swiper characters__carousel">
+        <div id="swiper-wrapper" class="swiper-wrapper py-3">
+          <!-- Slides here -->
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </section>
+
     <!-- Footer -->
     <footer class="bg-primary">
       <div class="footer__container d-flex flex-column align-items-center">
@@ -197,6 +209,18 @@
     </footer>
     <!-- End footer -->
 
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".characters__carousel", {
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        // show only 3 slides
+        slidesPerView: 2.5,
+      });
+    </script>
     <script type="module" src="/src/main.js"></script>
 </body>
 
