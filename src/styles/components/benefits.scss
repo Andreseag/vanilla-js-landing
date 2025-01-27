@@ -1,0 +1,105 @@
+.benefits {
+  border-radius: 30px;
+  padding: 27px 160px;
+
+  .benefits__container {
+    .benefits__stats {
+      gap: 49px;
+      .stats__card {
+        width: 287px;
+        span {
+          font-size: 80px;
+          font-weight: 700;
+        }
+      }
+    }
+    .benefits__contact {
+      margin-top: 46px;
+      padding: 78px 92px 24px 92px;
+      border-radius: 30px;
+      gap: 73px;
+
+      .benefits__contact__title {
+        width: 30%;
+        img {
+          margin-top: 50px;
+        }
+      }
+
+      .benefits__form {
+        width: 100%;
+        .form-group {
+          margin-bottom: 13px;
+          label {
+            font-size: 16px;
+            font-weight: 600;
+            font-family: "Noto Sans", serif;
+          }
+          input,
+          textarea {
+            border-radius: 0;
+            border: none;
+            background-color: #eeeeee;
+            font-family: "Noto Sans", serif;
+
+            &::placeholder {
+              color: #c9c9c9;
+              font-family: "Noto Sans", serif;
+              font-weight: 400;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// mobile version xl
+@media (max-width: 1325px) {
+  .benefits {
+    padding: 27px 16px;
+    .benefits__contact {
+      padding: 40px 24px 24px 24px;
+      gap: 30px !important;
+      flex-direction: column;
+      .benefits__contact__title {
+        width: 100% !important;
+        img {
+          margin-top: 0;
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+// mobile version
+@media (max-width: 768px) {
+  .benefits {
+    .benefits__container {
+      .benefits__stats {
+        flex-direction: column;
+        gap: 30px;
+        .stats__card {
+          border-bottom: 1px solid #c9c9c9;
+          padding: 24px 0;
+          width: 100%;
+          span {
+            font-size: 50px;
+          }
+        }
+      }
+      .benefits__contact {
+        padding: 40px 24px 24px 24px;
+        gap: 30px !important;
+        .benefits__contact__title {
+          width: 100% !important;
+          img {
+            margin-top: 0;
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}

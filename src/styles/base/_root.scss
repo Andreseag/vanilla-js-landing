@@ -1,0 +1,41 @@
+:root {
+  font-family: "Lato", sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  // create color variables using CSS custom properties
+  --primary-color: #2441e6;
+  --secondary-color: #f7df1e;
+  --black-color: #00174f;
+}
+
+h1 {
+  font-size: 4rem;
+  font-weight: lighter;
+}
+
+h2 {
+  font-size: 2.375rem;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+h4 {
+  font-size: 1.5rem;
+  font-weight: normal;
+}
+
+h5 {
+  font-size: 1.25rem;
+  font-weight: 500;
+}

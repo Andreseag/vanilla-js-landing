@@ -1,0 +1,70 @@
+// Header component
+.header {
+  height: 728px;
+  padding: 56px 0px 144px 128px;
+  background-image: url("../../public/images/hero-background.png");
+  background-size: cover;
+  background-position: center;
+
+  .header__container {
+    height: 100%;
+
+    .header__logo {
+      margin-bottom: 114px;
+    }
+
+    .header__info {
+      width: 40%;
+
+      h1 {
+        margin-bottom: 31px;
+      }
+
+      h3 {
+        margin-bottom: 44px;
+      }
+    }
+  }
+}
+
+// mobile version xl
+@media (max-width: 1325px) {
+  .header {
+    padding: 56px 0px 144px 64px;
+
+    .header__container {
+      .header__info {
+        width: 60%;
+      }
+    }
+  }
+}
+
+// mobile version lg
+@media (max-width: 1024px) {
+  .header {
+    padding: 56px 0px 144px 32px;
+
+    .header__container {
+      .header__info {
+        width: 80%;
+      }
+    }
+  }
+}
+
+// mobile version md
+@media (max-width: 768px) {
+  .header {
+    padding: 32px 0px 144px 16px;
+
+    .header__container {
+      .header__info {
+        width: 100%;
+      }
+      .header__logo {
+        margin-bottom: 48px;
+      }
+    }
+  }
+}

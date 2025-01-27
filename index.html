@@ -33,7 +33,7 @@
     <section class="services container mt-5">
       <div class="services__container">
         <div class="services__title">
-          <h2 class="text-primary text-center px-5">
+          <h2 class="text-primary text-center md:px-5">
             Podemos preparar tu sitio para el aumento de flujo CyberDay que recibirá en esos días.
           </h2>
         </div>
@@ -139,6 +139,10 @@
               <textarea rows="4" id="message" class="form-control" placeholder="Ingresa tu mensaje ">
               </textarea>
             </div>
+            <!-- Recapcha -->
+            <div class="g-recaptcha" data-sitekey="your_site_key"></div>
+            <br />
+            <!-- End re capcha -->
             <div class="w-full d-flex justify-content-end">
               <button type="button" class="custom-btn-primary btn btn-primary btn-lg px-5">Enviar</button>
             </div>
@@ -169,8 +173,30 @@
         </div>
       </div>
       <!-- End about us -->
-
     </section>
+
+    <!-- Footer -->
+    <footer class="bg-primary">
+      <div class="footer__container d-flex flex-column align-items-center">
+        <div class="footer__logo">
+          <p class="logo text-white">LOGOTIPO</p>
+        </div>
+        <div class="footer__info">
+          <h4 class="text-white
+          ">
+            Sitio web
+          </h4>
+        </div>
+        <div class="footer__address">
+          <p class="text-white
+          ">
+            Dirección
+          </p>
+        </div>
+      </div>
+    </footer>
+    <!-- End footer -->
+
     <script type="module" src="/src/main.js"></script>
 </body>
 

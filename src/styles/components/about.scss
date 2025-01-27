@@ -1,0 +1,43 @@
+// About
+.about {
+  padding: 120px 160px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.9),
+      rgba(255, 255, 255, 0.1)
+    ),
+    url("../../public/images/bg-pattern.png");
+  .container__about {
+    gap: 55px;
+    .about__title {
+      width: 40%;
+    }
+  }
+}
+
+// mobile version xl
+@media (max-width: 1325px) {
+  .about {
+    padding: 120px 32px;
+    .container__about {
+      .about__title {
+        width: 60%;
+      }
+    }
+  }
+}
+
+// mobile version
+@media (max-width: 768px) {
+  .about {
+    padding: 80px 16px;
+    .container__about {
+      flex-direction: column;
+      .about__title {
+        width: 100%;
+      }
+    }
+  }
+}
