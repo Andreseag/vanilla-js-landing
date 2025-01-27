@@ -20,7 +20,7 @@ export async function showCharacters() {
         
         <p class="card__height">Estatura: <span class="span-data">${character.height}</span></p>
         <p>Color de ojos: <span class="span-data">${character.eye_color}</span></p>
-        <p>Color pelo: <span class="span-data">${character.hair_color}</span></p>
+        <p>Color de pelo: <span class="span-data">${character.hair_color}</span></p>
       </div>
       `;
     characterElement.classList.add("swiper-slide");

@@ -1,5 +1,5 @@
 .characters {
-  margin: 120px 26px;
+  margin: 120px 160px;
   .characters__carousel {
     // add opacity gradient to the carousel
     margin: 16px 0px;
@@ -34,6 +34,29 @@
         font-size: 1.2rem;
         font-weight: bold;
         color: var(--primary-color);
+      }
+    }
+  }
+}
+
+@media (max-width: 1325px) {
+  .characters {
+    margin: 120px 32px;
+    .characters__carousel {
+      .card-character {
+        margin: 0 5px;
+      }
+    }
+  }
+}
+
+// responsive
+@media (max-width: 768px) {
+  .characters {
+    margin: 120px 20px;
+    .characters__carousel {
+      .card-character {
+        margin: 0 5px;
       }
     }
   }
