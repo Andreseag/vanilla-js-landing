@@ -5,7 +5,8 @@
   <meta charset="UTF-8" />
   <link rel="icon" type="image/svg+xml" href="/vite.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Vite App</title>
+  <title>Landing Page LFI</title>
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 
 <body>
@@ -75,6 +76,80 @@
       </div>
     </section>
     <!-- End Services -->
+    <!-- Benefits -->
+    <section class="benefits bg-primary">
+      <div class="benefits__container">
+        <div class="benefits__title">
+          <h2 class="text-center px-5 text-white">
+            Beneficios
+          </h2>
+        </div>
+        <div class="benefits__stats d-flex justify-content-center">
+          <!-- Benefits card -->
+          <div class="stats__card text-center">
+            <span class="text-white">53%</span>
+            <h5 class="text-white">
+              de los visitantes abandona un sitio que demora más de 3 segundos en cargar
+            </h5>
+          </div>
+          <!-- End benefits card -->
+          <!-- Benefits card -->
+          <div class="stats__card text-center">
+            <span class="text-white">79%</span>
+            <h5 class="text-white">
+              de los compradores evitarán un negocio en línea en donde hayan experimentado problemas
+            </h5>
+          </div>
+          <!-- End benefits card -->
+          <!-- Benefits card -->
+          <div class="stats__card text-center">
+            <span class="text-white">44%</span>
+            <h5 class="text-white">
+              de los compradores en línea compartirá su experiencia negativa con sus amigos
+            </h5>
+          </div>
+          <!-- End benefits card -->
+        </div>
+
+        <!-- Form contact -->
+        <div class="benefits__contact bg-white d-flex justify-content-between">
+          <div class="benefits__contact__title">
+            <h2>
+              No dejes el
+              Cyber al Azar
+              ¡Contáctanos!
+            </h2>
+            <img src="./public/images/computer-illustration.png" alt="computer illustration" />
+          </div>
+          <form action="" class="benefits__form">
+            <div class="form-group">
+              <label for="name" class="text-black">Nombre</label>
+              <input type="text" id="name" class="form-control" placeholder="Nombre completo" />
+            </div>
+            <div class="form-group">
+              <label for="company" class="text-black">Empresa</label>
+              <input type="text" id="company" class="form-control" placeholder="Ingresa el  nombre de la empresa" />
+            </div>
+            <div class="form-group">
+              <label for="email" class="text-black">Email</label>
+              <input type="text" id="email" class="form-control" placeholder="Ingresa tu e-mail" />
+            </div>
+            <div class="form-group">
+              <label for="message" class="text-black">Mensaje</label>
+              <textarea rows="4" id="message" class="form-control" placeholder="Ingresa tu mensaje ">
+              </textarea>
+            </div>
+            <div class="w-full d-flex justify-content-end">
+              <button type="button" class="custom-btn-primary btn btn-primary btn-lg px-5">Enviar</button>
+            </div>
+          </form>
+
+        </div>
+        <!-- End form contact -->
+
+    </section>
+    <!-- End Benefits -->
+
   </div>
   <script type="module" src="/src/main.js"></script>
 </body>

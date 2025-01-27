@@ -3,6 +3,7 @@
 
 // Import fonts
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
 
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
@@ -52,6 +53,15 @@ h5 {
 
 .text-black {
   color: var(--black-color);
+}
+
+.text-white {
+  color: #fff;
+}
+
+// Background color classes
+.bg-primary {
+  background-color: var(--primary-color);
 }
 
 // Header component
@@ -107,6 +117,62 @@ h5 {
           svg {
             flex-shrink: 0;
             margin-top: 18px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.benefits {
+  border-radius: 30px;
+  padding: 27px 160px;
+
+  .benefits__container {
+    .benefits__stats {
+      gap: 49px;
+      .stats__card {
+        width: 287px;
+        span {
+          font-size: 80px;
+          font-weight: 700;
+        }
+      }
+    }
+    .benefits__contact {
+      margin-top: 46px;
+      padding: 78px 92px 24px 92px;
+      border-radius: 30px;
+      gap: 73px;
+
+      .benefits__contact__title {
+        width: 30%;
+        img {
+          margin-top: 50px;
+        }
+      }
+
+      .benefits__form {
+        width: 100%;
+        .form-group {
+          margin-bottom: 13px;
+          label {
+            font-size: 16px;
+            font-weight: 600;
+            font-family: "Noto Sans", serif;
+          }
+          input,
+          textarea {
+            border-radius: 0;
+            border: none;
+            background-color: #eeeeee;
+            font-family: "Noto Sans", serif;
+
+            &::placeholder {
+              color: #c9c9c9;
+              font-family: "Noto Sans", serif;
+              font-weight: 400;
+            }
           }
         }
       }
