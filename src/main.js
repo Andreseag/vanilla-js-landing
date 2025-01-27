@@ -1,4 +1,4 @@
 import "./styles/style.scss";
-import { showCharacters } from "./characters.js";
+import { showCharacters } from "./scripts/characters.js";
 
 showCharacters();
